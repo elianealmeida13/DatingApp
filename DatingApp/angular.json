@@ -125,5 +125,10 @@
       }
     }
   },
-  "defaultProject": "DatingApp"
+  "defaultProject": "DatingApp",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "css"
+    }
+  }
 }
