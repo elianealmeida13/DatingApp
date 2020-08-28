@@ -21,6 +21,7 @@ namespace DatingApp.API
                     var context = services.GetRequiredService<DataContext>();
                     context.Database.Migrate();
                     Seed.SeedUsers(context);
+                    host.Run();
                 } catch(Exception ex)
                 {
                     Console.WriteLine(ex.StackTrace);
