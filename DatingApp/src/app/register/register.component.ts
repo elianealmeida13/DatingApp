@@ -56,7 +56,7 @@ export class RegisterComponent implements OnInit {
       }, error => {
         this.alertify.error(error);
       }, () => {
-        this.user.username = this.user.username.toLowerCase();
+        this.user.userName = this.user.userName.toLowerCase();
         this.authService.login(this.user).subscribe(() => {
           this.router.navigate(['/members']);
         });
